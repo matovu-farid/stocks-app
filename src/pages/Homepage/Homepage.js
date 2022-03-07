@@ -1,74 +1,83 @@
-import StockItem from '../../components/StockItem';
+import StockHeader from '../../components/StockHeader/StockHeader';
+import StockItem from '../../components/StockItem/StockItem';
 import './Homepage.css';
 
 const data = [
   {
     symbol: 'AAPL',
-    companyName: 'Apple Inc.',
+    name: 'Apple Inc.',
     price: 163.1700,
   },
   {
     symbol: 'NVDA',
-    companyName: 'NVIDIA Corporation',
+    name: 'NVIDIA Corporation',
     price: 229.3600,
   },
   {
     symbol: 'AVGO',
-    companyName: 'Broadcom Inc.',
+    name: 'Broadcom Inc.',
     price: 595.9900,
   },
   {
     symbol: 'ADBE',
-    companyName: 'Adobe Inc.',
+    name: 'Adobe Inc.',
     price: 452.1300,
   },
   {
     symbol: 'QCOM',
-    companyName: 'QUALCOMM Incorporated',
+    name: 'QUALCOMM Incorporated',
     price: 162.2600,
   },
   {
     symbol: 'AMD',
-    companyName: 'Advanced Micro Devices, Inc.',
+    name: 'Advanced Micro Devices, Inc.',
     price: 108.4100,
   },
   {
     symbol: 'INTU',
-    companyName: 'Intuit Inc.',
+    name: 'Intuit Inc.',
     price: 464.9500,
   },
   {
     symbol: 'AMAT',
-    companyName: 'Applied Materials, Inc.',
+    name: 'Applied Materials, Inc.',
     price: 125.7400,
   },
   {
     symbol: 'MU',
-    companyName: 'Micron Technology, Inc.',
+    name: 'Micron Technology, Inc.',
     price: 81.9100,
   },
   {
     symbol: 'ADI',
-    companyName: 'Analog Devices, Inc.',
+    name: 'Analog Devices, Inc.',
     price: 156.8500,
   },
   {
     symbol: 'LRCX',
-    companyName: 'Lam Research Corporation',
+    name: 'Lam Research Corporation',
     price: 525.7800,
   },
 ];
 const Homepage = () => (
-  <ul>
-    {
-      data.map(({ symbol, companyName, price }) => (
+  <div className="page">
+    <StockHeader />
+    <div className="stocks">
+
+      <h2>Stats By Country</h2>
+      <ul className="stocklist">
+        {
+      data.map(({ symbol, name, price }) => (
         <StockItem
           key={symbol}
-          companyName={companyName}
+          symbol={symbol}
+          name={name}
           price={price}
         />
       ))
     }
-  </ul>
+      </ul>
+    </div>
+  </div>
 );
 export default Homepage;

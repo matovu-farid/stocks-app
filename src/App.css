@@ -1,5 +1,16 @@
 #root {
---main-colour: #fa4f91
+--main-colour: #fa4f91;
+--accent-color: #f9fafc;
+--main-dark: #d04379;
+--pink: #dc4782;
+}
+
+html {
+  background-color: var(--main-colour);
+}
+
+body {
+  background-color: var(--main-colour);
 }
 
 li {
@@ -8,4 +19,13 @@ li {
 
 ul {
   padding-left: 0;
+  margin: 0;
+}
+
+h3, h1, h2, p {
+  margin: 0;
+}
+
+h2 {
+  color: var(--accent-color);
 }
