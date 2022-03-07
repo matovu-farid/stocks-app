@@ -1,8 +1,8 @@
 #root {
---main-colour: #fa4f91;
---accent-color: #f9fafc;
---main-dark: #d04379;
---pink: #dc4782;
+  --main-colour: #fa4f91;
+  --accent-color: #f9fafc;
+  --main-dark: #d04379;
+  --pink: #dc4782;
 }
 
 html {
@@ -22,7 +22,10 @@ ul {
   margin: 0;
 }
 
-h3, h1, h2, p {
+h3,
+h1,
+h2,
+p {
   margin: 0;
 }
 

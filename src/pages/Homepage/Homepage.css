@@ -1,6 +1,6 @@
 .stocklist {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   color: var(--accent-color);
 }
 
