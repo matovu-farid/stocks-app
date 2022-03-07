@@ -18,16 +18,16 @@
 }
 
 .stockitem .name {
-  font-size: 1.5em;
+  font-size: var(--sub-heading);
   font-weight: bold;
 }
 
 .stockitem .price {
-  font-size: 1.2em;
+  font-size: var(--detail);
 }
 
 .stockitem .symbol {
-  font-size: 2.2em;
+  font-size: var(--heading);
   text-align: center;
   font-weight: bold;
 }

@@ -1,0 +1,42 @@
+.details {
+  background-color: var(--main-colour);
+  color: var(--accent-color);
+  
+
+}
+
+.details > h2 {
+  background-color: var(--pink);
+  text-indent: 1.5em;
+}
+
+.details-list {
+  background-color: var(--main-colour);
+  color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.details-item {
+  padding: 1em ;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--main-colour);
+  display: flex;
+  font-size: var(--sub-heading);
+  justify-content: space-between;
+  font-weight: 500;
+  
+}
+
+.details-item > .info {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.details-item:nth-child(even) {
+  background-color: var(--main-dark);
+}

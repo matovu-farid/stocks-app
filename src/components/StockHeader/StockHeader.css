@@ -4,10 +4,12 @@
   color: var(--accent-color);
   background-color: var(--main-colour);
   height: 20vh;
+
 }
 
+
 .stock-header h1 {
-  font-size: 3em;
+  font-size: var(--title);
   margin: 0;
 }
 
@@ -23,5 +25,5 @@
 }
 
 .snp-symbol {
-  font-size: 2em;
+  font-size: var(--heading);
 }

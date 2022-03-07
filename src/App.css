@@ -3,14 +3,20 @@
   --accent-color: #f9fafc;
   --main-dark: #d04379;
   --pink: #dc4782;
+  --heading: 2.2em;
+  --sub-heading: 1.4em;
+  --detail: 1.2em;
+  --title:3em;
 }
 
 html {
   background-color: var(--main-colour);
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--main-colour);
+  box-sizing: border-box;
 }
 
 li {
