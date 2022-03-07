@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  background-color: var(--pink);
+  height: 8vh;
+  align-items: center;
+}
+
+.end {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+}
