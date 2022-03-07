@@ -7,7 +7,7 @@
 }
 
 .stock-header h1 {
-  font-size: 3em;
+  font-size: var(--title);
   margin: 0;
 }
 
@@ -23,5 +23,5 @@
 }
 
 .snp-symbol {
-  font-size: 2em;
+  font-size: var(--heading);
 }
