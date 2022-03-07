@@ -1,3 +1,4 @@
+import Navbar from '../../components/Navbar/Navbar';
 import StockHeader from '../../components/StockHeader/StockHeader';
 import StockItem from '../../components/StockItem/StockItem';
 import './Homepage.css';
@@ -61,6 +62,7 @@ const data = [
 ];
 const Homepage = () => (
   <div className="page">
+    <Navbar title="companies" />
     <StockHeader />
     <div className="stocks">
 

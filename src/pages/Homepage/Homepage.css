@@ -6,6 +6,7 @@
 
 .page {
   height: 100vh;
+  color: var(--accent-color);
   background-color: var(--main-colour);
 }
 
