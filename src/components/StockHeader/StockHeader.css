@@ -4,9 +4,7 @@
   color: var(--accent-color);
   background-color: var(--main-colour);
   height: 20vh;
-
 }
-
 
 .stock-header h1 {
   font-size: var(--title);

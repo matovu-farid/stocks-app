@@ -1,8 +1,6 @@
 .details {
   background-color: var(--main-colour);
   color: var(--accent-color);
-  
-
 }
 
 .details > h2 {
@@ -15,12 +13,10 @@
   color: var(--accent-color);
   display: flex;
   flex-direction: column;
-  
-
 }
 
 .details-item {
-  padding: 1em ;
+  padding: 1em;
   box-sizing: border-box;
   width: 100%;
   background-color: var(--main-colour);
@@ -28,7 +24,6 @@
   font-size: var(--sub-heading);
   justify-content: space-between;
   font-weight: 500;
-  
 }
 
 .details-item > .info {
