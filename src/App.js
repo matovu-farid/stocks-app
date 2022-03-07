@@ -6,8 +6,8 @@ import Homepage from './pages/Homepage/Homepage';
 function App() {
   return (
     <Routes>
-      <Route path="/details" element={<Homepage />} />
-      <Route path="/" element={<Detailspage />} />
+      <Route path="/" element={<Homepage />} />
+      <Route path="/details" element={<Detailspage />} />
     </Routes>
   );
 }
