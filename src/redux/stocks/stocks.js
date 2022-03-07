@@ -5,9 +5,9 @@ export const fetchData = () => async (dispatch) => {
   const response = await fetch(url);
   const data = await response.json();
   const payload = data.map(({
-    id, rocket_name: name, description, flickr_images: images,
+    symbol, companyName: name, price,
   }) => ({
-    id, name, description, images, reserved: false,
+    symbol, name, price,
   }));
   dispatch({
     type: FETCHDATA,
