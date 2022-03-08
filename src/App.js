@@ -5,6 +5,7 @@ import './App.css';
 import Detailspage from './pages/Details/Details';
 import Homepage from './pages/Homepage/Homepage';
 import { innitateSearch } from './redux/stocks/search_stocks';
+import { fetchSnpData } from './redux/stocks/snp';
 import { fetchData } from './redux/stocks/stocks';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   }, [data]);
   useEffect(() => {
     dispatch(fetchData());
+    dispatch(fetchSnpData());
   }, []);
   return (
     <Routes>

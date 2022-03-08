@@ -5,13 +5,8 @@ import Header from '../../components/StockHeader/StockHeader';
 import Stocklist from '../../Stocklist/Stocklist';
 import './Homepage.css';
 
-const snp = {
-  symbol: '^GSPC',
-  name: 'S&P 500',
-  price: 4328.87000000,
-
-};
 const Homepage = () => {
+  const snp = useSelector((state) => state.snp);
   const searchData = useSelector((state) => state.searchStocks);
   return (
     <div className="page">
