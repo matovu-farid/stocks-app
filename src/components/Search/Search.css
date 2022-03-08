@@ -1,0 +1,14 @@
+.searchbar {
+  width: 100%;
+  font-size: var(--sub-heading);
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: var(--main-dark);
+  color: var(--accent-color);
+}
+
+.searchbar::placeholder {
+  color: var(--accent-color);
+}

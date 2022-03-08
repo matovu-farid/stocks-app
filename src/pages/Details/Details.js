@@ -10,7 +10,7 @@ const Detailspage = () => {
   return (
     <div className="page">
       <Navbar title="company details" />
-      <Header value={data} />
+      <Header value={{ ...data, name: data.companyName }} />
       <div className="details">
 
         <h2>Company Stats</h2>
