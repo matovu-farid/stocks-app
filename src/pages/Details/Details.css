@@ -4,7 +4,7 @@
 }
 
 .details > h2 {
-  background-color: var(--pink);
+  background-color: var(--main-dark);
   text-indent: 1.5em;
 }
 
@@ -19,7 +19,7 @@
   padding: 1em;
   box-sizing: border-box;
   width: 100%;
-  background-color: var(--main-colour);
+  background-color: var(--pink);
   display: flex;
   font-size: var(--sub-heading);
   justify-content: space-between;

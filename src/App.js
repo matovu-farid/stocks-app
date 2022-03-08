@@ -14,7 +14,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/:id" element={<Detailspage />} />
+      <Route path="/:symbol" element={<Detailspage />} />
     </Routes>
   );
 }

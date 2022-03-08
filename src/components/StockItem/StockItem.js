@@ -1,18 +1,26 @@
 import propTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import './StockItem.css';
 
-const StockItem = ({ name, price, symbol }) => (
+const StockItem = ({ name, price, symbol }) => {
+  const navigate = useNavigate();
+  const onClick = () => {
+    navigate(`/${symbol}`);
+  };
+  return (
 
-  <li className="stockitem">
-    <div>
-      <p className="symbol">{symbol}</p>
-    </div>
-    <div className="info">
-      <p className="name">{name}</p>
-      <p className="price">{price}</p>
-    </div>
-  </li>
-);
+    <button type="button" onClick={onClick} className="button stockitem">
+
+      <div>
+        <p className="symbol">{symbol}</p>
+      </div>
+      <div className="info">
+        <p className="name">{name}</p>
+        <p className="price">{price}</p>
+      </div>
+    </button>
+  );
+};
 StockItem.propTypes = {
 
   name: propTypes.string.isRequired,
