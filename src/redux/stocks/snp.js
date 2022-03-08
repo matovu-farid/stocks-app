@@ -1,12 +1,14 @@
 const FETCHDATA = 'SNP/FETCH';
 
 const url = 'https://financialmodelingprep.com/api/v3/quote/%5EGSPC?apikey=9b6100842231c66b4c6c23e323384b39';
-export const fetchData = () => async (dispatch) => {
+export const fetchSnpData = () => async (dispatch) => {
   const response = await fetch(url);
+
   const {
 
     name, price, symbol,
-  } = await response.json()[0];
+  } = (await response.json())[0];
+
   const payload = {
     name, price, symbol,
   };
@@ -16,10 +18,10 @@ export const fetchData = () => async (dispatch) => {
   });
 };
 
-const stocksReducer = (state = [], action) => {
+const snpReducer = (state = [], action) => {
   switch (action.type) {
     case FETCHDATA: return action.payload;
     default: return state;
   }
 };
-export default stocksReducer;
+export default snpReducer;
