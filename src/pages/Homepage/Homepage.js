@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar';
-import StockHeader from '../../components/StockHeader/StockHeader';
+import Header from '../../components/StockHeader/StockHeader';
 import StockItem from '../../components/StockItem/StockItem';
 import './Homepage.css';
 
@@ -60,10 +60,17 @@ const data = [
     price: 525.7800,
   },
 ];
+
+const snp = {
+  symbol: '^GSPC',
+  name: 'S&P 500',
+  price: 4328.87000000,
+
+};
 const Homepage = () => (
   <div className="page">
     <Navbar title="companies" />
-    <StockHeader />
+    <Header value={snp} />
     <div className="stocks">
 
       <h2>Stats By Country</h2>
