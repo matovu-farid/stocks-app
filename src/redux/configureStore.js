@@ -1,6 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import logger from 'redux-logger';
 
 import stocksReducer from './stocks/stocks';
 import searchReducer from './search/search';
@@ -15,5 +14,5 @@ const reducer = combineReducers(
     snp: snpReducer,
   },
 );
-const store = createStore(reducer, applyMiddleware(logger, thunk));
+const store = createStore(reducer, applyMiddleware(thunk));
 export default store;
