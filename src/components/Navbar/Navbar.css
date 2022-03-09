@@ -5,7 +5,7 @@
   background-color: var(--pink);
   height: 8vh;
   align-items: center;
-  width: 100vw;
+  box-sizing: border-box;
 }
 
 .end {
