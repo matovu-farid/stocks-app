@@ -18,8 +18,8 @@
   height: 100%;
   position: absolute;
   filter: grayscale(100%);
-  background-size: cover;
-  opacity: 10%;
+  background-size: contain;
+  opacity: 20%;
   
 }
 

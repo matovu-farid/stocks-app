@@ -1,13 +1,13 @@
 import propTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import './StockItem.css';
+import stockImage from './stocks.png';
 
 const StockItem = ({ name, price, symbol }) => {
   const navigate = useNavigate();
   const onClick = () => {
     navigate(`/${symbol}`);
   };
-  const url = 'https://financialmodelingprep.com/image-stock/AAPL.png';
   return (
 
     <button type="button" onClick={onClick} className="button stockitem">
@@ -23,7 +23,7 @@ const StockItem = ({ name, price, symbol }) => {
       <div
         className="bg-image"
         style={{
-          background: `url(${url})  no-repeat center center`,
+          background: `url(${stockImage})  no-repeat center center`,
 
         }}
       />
