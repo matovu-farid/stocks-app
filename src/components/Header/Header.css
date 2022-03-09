@@ -4,6 +4,7 @@
   color: var(--accent-color);
   background-color: var(--main-colour);
   height: 20vh;
+  width: 100%;
 }
 
 .stock-header h1 {

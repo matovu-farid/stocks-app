@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import Navbar from '../../components/Navbar/Navbar';
 import './Details.css';
 import StockHeader from '../../components/StockHeader/StockHeader';
+import ItemList from '../../components/Itemlist/Itemlist';
 
 const Detailspage = () => {
   const {
@@ -28,14 +29,7 @@ const Detailspage = () => {
       <div className="details">
 
         <h2>Company Stats</h2>
-        <ul className="details-list">
-          {Object.keys(filteredData).map((key) => (
-            <li className="details-item" key={key}>
-              <span>{key}</span>
-              <span>{filteredData[key]}</span>
-            </li>
-          ))}
-        </ul>
+        <ItemList data={filteredData} />
       </div>
     </div>
   );

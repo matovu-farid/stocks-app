@@ -15,7 +15,7 @@ const StockItem = ({ name, price, symbol }) => {
   };
   useEffect(() => {
     if (Object.keys(data).length > 0 && data.symbol === symbol) {
-      navigate(`/${symbol}`);
+      navigate(`/details/${symbol}`);
     }
   }, [data]);
   return (
