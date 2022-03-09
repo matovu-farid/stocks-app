@@ -17,6 +17,9 @@ stocks-app is an app that shows various company stock prices and more informatio
 - React
 - Redux
 
+## Deployment
+[The site is deployed](https://frosty-beaver-391916.netlify.app)
+
 ## Getting Started
 
 To get the content of this project locally you need to run this command in your terminal:
