@@ -4,3 +4,9 @@
   height: 100%;
   object-fit: fill;
 }
+
+.stock-header .image {
+  filter: grayscale(100%);
+  opacity: 50%;
+
+}
