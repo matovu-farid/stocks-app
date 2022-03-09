@@ -6,14 +6,8 @@ const url = `https://financialmodelingprep.com/api/v3/quote/%5EGSPC?apikey=${api
 export const fetchSnpData = () => async (dispatch) => {
   const response = await fetch(url);
 
-  const {
+  const payload = (await response.json())[0];
 
-    name, price, symbol,
-  } = (await response.json())[0];
-
-  const payload = {
-    name, price, symbol,
-  };
   dispatch({
     type: FETCHDATA,
     payload,
