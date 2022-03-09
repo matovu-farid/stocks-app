@@ -9,6 +9,10 @@
   --title: 3em;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: var(--main-colour);
   box-sizing: border-box;

@@ -1,6 +1,8 @@
+import apikey from '../apikey';
+
 const FETCHDATA = 'SNP/FETCH';
 
-const url = 'https://financialmodelingprep.com/api/v3/quote/%5EGSPC?apikey=9b6100842231c66b4c6c23e323384b39';
+const url = `https://financialmodelingprep.com/api/v3/quote/%5EGSPC?apikey=${apikey}`;
 export const fetchSnpData = () => async (dispatch) => {
   const response = await fetch(url);
 

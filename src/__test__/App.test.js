@@ -38,14 +38,3 @@ it('searches for badvalue and apple is filtered from sreen', async () => {
   expect(screen.queryByDisplayValue(/badvalue/)).toBeInTheDocument();
   expect(screen.queryByText(/apple/i)).not.toBeInTheDocument();
 });
-
-it('renders a company stats for apple when clicked', async () => {
-  render(
-    <TestApp />,
-  );
-  await waitFor(() => screen.getByText(/apple/i));
-  expect(screen.queryByText(/stats by company/i)).toBeInTheDocument();
-  fireEvent.click(screen.getByText(/apple/i));
-  expect(screen.queryByText(/stats by company/i)).not.toBeInTheDocument();
-  expect(screen.queryByText(/company stats/i)).toBeInTheDocument();
-});

@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
+import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import Search from '../../components/Search/Search';
-import Header from '../../components/StockHeader/StockHeader';
 import Stocklist from '../../Stocklist/Stocklist';
 import './Homepage.css';
 

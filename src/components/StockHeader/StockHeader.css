@@ -1,27 +1,11 @@
 
-.stock-header {
-  display: flex;
-  color: var(--accent-color);
-  background-color: var(--main-colour);
-  height: 20vh;
+.stock-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
-.stock-header h1 {
-  font-size: var(--title);
-  margin: 0;
-}
-
-.stock-header > div {
-  flex: 1;
-}
-
-.stock-header > .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.snp-symbol {
-  font-size: var(--heading);
+.stock-header .image {
+  filter: grayscale(100%);
+  opacity: 50%;
 }

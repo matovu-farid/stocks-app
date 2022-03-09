@@ -1,12 +1,23 @@
 import propTypes from 'prop-types';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { fetchCompany } from '../../redux/company/company';
 import './StockItem.css';
+import stockImage from './stocks.png';
 
 const StockItem = ({ name, price, symbol }) => {
   const navigate = useNavigate();
+  const data = useSelector((state) => state.company);
+  const dispatch = useDispatch();
   const onClick = () => {
-    navigate(`/${symbol}`);
+    dispatch(fetchCompany(symbol));
   };
+  useEffect(() => {
+    if (Object.keys(data).length > 0 && data.symbol === symbol) {
+      navigate(`/${symbol}`);
+    }
+  }, [data]);
   return (
 
     <button type="button" onClick={onClick} className="button stockitem">
@@ -18,7 +29,16 @@ const StockItem = ({ name, price, symbol }) => {
         <p className="name">{name}</p>
         <p className="price">{price}</p>
       </div>
+
+      <div
+        className="bg-image"
+        style={{
+          background: `url(${stockImage})  no-repeat center center`,
+
+        }}
+      />
     </button>
+
   );
 };
 StockItem.propTypes = {
