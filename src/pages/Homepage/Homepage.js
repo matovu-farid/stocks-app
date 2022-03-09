@@ -15,7 +15,7 @@ const Homepage = () => {
       <Header value={snp} />
       <div className="stocks">
 
-        <h2>Stats By Country</h2>
+        <h2>Stats By Company</h2>
 
         <Stocklist data={searchData} />
 
