@@ -7,6 +7,7 @@ const StockItem = ({ name, price, symbol }) => {
   const onClick = () => {
     navigate(`/${symbol}`);
   };
+  const url = 'https://financialmodelingprep.com/image-stock/AAPL.png';
   return (
 
     <button type="button" onClick={onClick} className="button stockitem">
@@ -18,7 +19,16 @@ const StockItem = ({ name, price, symbol }) => {
         <p className="name">{name}</p>
         <p className="price">{price}</p>
       </div>
+
+      <div
+        className="bg-image"
+        style={{
+          background: `url(${url})  no-repeat center center`,
+
+        }}
+      />
     </button>
+
   );
 };
 StockItem.propTypes = {
