@@ -14,7 +14,7 @@ const StockItem = ({ name, price, symbol }) => {
     dispatch(fetchCompany(symbol));
   };
   useEffect(() => {
-    if (Object.keys(data).length > 0) {
+    if (Object.keys(data).length > 0 && data.symbol === symbol) {
       navigate(`/${symbol}`);
     }
   }, [data]);

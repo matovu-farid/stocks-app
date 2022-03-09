@@ -20,7 +20,7 @@ const Navbar = ({ title }) => {
   };
   useEffect(() => {
     if (pathname !== '/' && Object.keys(company).length === 0) {
-      navigate('/');
+      navigate(-1);
     }
   }, [company]);
   return (
