@@ -1,13 +1,23 @@
 import propTypes from 'prop-types';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { fetchCompany } from '../../redux/company/company';
 import './StockItem.css';
 import stockImage from './stocks.png';
 
 const StockItem = ({ name, price, symbol }) => {
   const navigate = useNavigate();
+  const data = useSelector((state) => state.company);
+  const dispatch = useDispatch();
   const onClick = () => {
-    navigate(`/${symbol}`);
+    dispatch(fetchCompany(symbol));
   };
+  useEffect(() => {
+    if (Object.keys(data).length > 0) {
+      navigate(`/${symbol}`);
+    }
+  }, [data]);
   return (
 
     <button type="button" onClick={onClick} className="button stockitem">

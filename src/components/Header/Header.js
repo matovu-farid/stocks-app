@@ -1,11 +1,11 @@
 import propTypes from 'prop-types';
-import './StockHeader.css';
+import './Header.css';
 
-const StockHeader = ({ value }) => (
+const Header = ({ value }) => (
   <div className="stock-header">
     <div>
 
-      <img src={value.image} alt={value.companyName} />
+      <h1>{value.name}</h1>
     </div>
     <div className="info">
       <p className="snp-symbol">{value.symbol}</p>
@@ -15,8 +15,8 @@ const StockHeader = ({ value }) => (
   </div>
 );
 
-StockHeader.propTypes = {
+Header.propTypes = {
   value: propTypes.instanceOf(Object).isRequired,
 };
 
-export default StockHeader;
+export default Header;

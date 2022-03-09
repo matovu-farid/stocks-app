@@ -11,7 +11,7 @@ const Navbar = ({ title }) => {
   const { pathname } = useLocation();
   const onClick = () => {
     if (pathname === '/') return;
-    navigate(-1);
+    navigate('/');
   };
   return (
     <div className="navbar">

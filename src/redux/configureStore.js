@@ -1,6 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
+import { composeWithDevTools } from '@redux-devtools/extension';
 import stocksReducer from './stocks/stocks';
 import searchReducer from './search/search';
 import searchStocksReducer from './stocks/search_stocks';
@@ -16,5 +17,5 @@ const reducer = combineReducers(
     company: companyReducer,
   },
 );
-const store = createStore(reducer, applyMiddleware(thunk));
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 export default store;
