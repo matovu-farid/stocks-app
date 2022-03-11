@@ -1,0 +1,20 @@
+.stocklist {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--accent-color);
+}
+
+.page {
+  height: 100vh;
+  color: var(--accent-color);
+  background-color: var(--main-colour);
+}
+
+.stocks {
+  background-color: var(--pink);
+}
+
+.stocks > h2 {
+  font-size: 1.1em;
+  text-indent: 1em;
+}

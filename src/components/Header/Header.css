@@ -1,0 +1,28 @@
+
+.stock-header {
+  display: flex;
+  color: var(--accent-color);
+  background-color: var(--main-colour);
+  height: 20vh;
+  width: 100%;
+}
+
+.stock-header h1 {
+  font-size: var(--title);
+  margin: 0;
+}
+
+.stock-header > div {
+  flex: 1;
+}
+
+.stock-header > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.snp-symbol {
+  font-size: var(--heading);
+}

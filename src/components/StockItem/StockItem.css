@@ -1,0 +1,54 @@
+.stockitem {
+  width: 50%;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--pink);
+  text-align: end;
+}
+
+.stockitem > .bg-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: grayscale(100%);
+  background-size: contain;
+  left: 0;
+  right: 0;
+  opacity: 20%;
+}
+
+.stockitem:nth-child(4n-1) {
+  background-color: var(--main-dark);
+}
+
+.stockitem:nth-child(4n-2) {
+  background-color: var(--main-dark);
+}
+
+.stockitem .name {
+  font-size: var(--sub-heading);
+  font-weight: bold;
+}
+
+.stockitem .price {
+  font-size: var(--detail);
+}
+
+.stockitem .symbol {
+  font-size: var(--heading);
+  text-align: center;
+  font-weight: bold;
+}
+
+.button {
+  background-color: transparent;
+}
+
+.stockitem .info {
+  width: 100%;
+  text-align: end;
+}
